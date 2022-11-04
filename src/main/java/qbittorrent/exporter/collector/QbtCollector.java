@@ -362,7 +362,7 @@ public class QbtCollector extends Collector implements QbtMetrics {
             String.valueOf(torrent.getMaxRatio()),
             String.valueOf(torrent.getRatio()),
             String.valueOf(torrent.getAddedOn()),
-            String.valueOf(torrent.getCompletionOn())
+            String.valueOf(torrent.getCompletionOn()) 
         ).set(1);
     }
 
