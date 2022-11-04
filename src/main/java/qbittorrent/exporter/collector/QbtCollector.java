@@ -148,7 +148,9 @@ public class QbtCollector extends Collector implements QbtMetrics {
             "downloaded",
             "downloaded_session",
             "max_ratio",
-            "ratio"
+            "ratio",
+            "added_on",
+            "completion_on"
         )
         .help("All info for torrents")
         .create();
@@ -358,7 +360,9 @@ public class QbtCollector extends Collector implements QbtMetrics {
             String.valueOf(torrent.getDownloaded()),
             String.valueOf(torrent.getDownloadedSession()),
             String.valueOf(torrent.getMaxRatio()),
-            String.valueOf(torrent.getRatio())
+            String.valueOf(torrent.getRatio()),
+            String.valueOf(torrent.getAddedOn()),
+            String.valueOf(torrent.getCompletionOn())
         ).set(1);
     }
 
